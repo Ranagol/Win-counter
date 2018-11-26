@@ -3,17 +3,30 @@
 <head>
 	<title>Score</title>
 	<link rel="stylesheet" type="text/css" href="5-score.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
-<body>
-<h1>Player 1 wins:<span id=p1Display>0</span> ----------Player 2 wins: <span id="p2Display">0</span></h1>
+<body id="body" class="m-5">
 
-<p>Playing till: <span>: 5</span></p>
-<p>Quick explanation. This program can count your results in games like ping pong or paper-rock-scissor, instead of you. You can set up the final win limit manually (right now it counts till 5 wins). You can reset the counters with the reset button. </p>
+<div class="container">
+	<div class="row textaligncenter d-flex">
+		<div class="col-4">Player A wins: <span id=p1Display>0</span></div>
+		<div class="col-4 align-items-end pt-4">Playing till: <span id="proba"> 5</span> wins.</div>
+		<div class="col-4">Player B wins: <span id="p2Display">0</span></div>
+	</div>
+	<div class="row mb-4">
+		<div class="col-4"><button class="btn btn-outline-danger" id="p1">Player A (click for win)</button></div>
+		<div class="col-4"><button class="btn btn-outline-danger" id="reset">Reset wins</button></div>
+		<div class="col-4"><button class="btn btn-outline-danger" id="p2">Player B (click for win)</button></div>
+	</div>
+</div>
+
+<p>Quick explanation. This program can count your results in games like ping pong or paper-rock-scissor, instead of you. You can set up the final win limit manually (right now it counts till 5 wins). You can reset the counters with the "Reset wins" button. Good luck with the game and don't cheat too much! :) </p>
 
 "Playing till" setup here:<input type="number">
-<button id="p1">Player one</button>
-<button id="p2">Player two</button>
-<button id="reset">Reset</button>
+
+<p id="funny" class="mt-5"><i class="fas fa-trophy"></i>     <i class="fas fa-dice"></i></p>
+
 
 
 <script type="text/javascript" src="5-score.js"></script>
