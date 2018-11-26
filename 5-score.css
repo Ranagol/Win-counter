@@ -1,3 +1,26 @@
 .winner{
 	color: green;
 }
+
+h1{
+	background: green;
+}
+
+#body{
+	background: lightgrey;
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+
+#p1Display{
+	font-size: 40px;
+}
+
+#p2Display{
+	font-size: 40px;
+}
+
+#funny{
+	font-size: 30px;
+}
